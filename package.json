@@ -1,5 +1,5 @@
 {
-  "name": "foobar",
+  "name": "personal-trainer-backend",
   "type": "module",
   "imports": {
     "#*": "./*.js"
