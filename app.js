@@ -15,6 +15,7 @@ import handlePostgresErrors from "#middleware/handlePostgresErrors";
 import cors from "cors";
 import morgan from "morgan";
 import trainersRouter from "#api/trainers";
+import programsRouter from "#api/programs";
 
 app.use(cors({ origin: process.env.CORS_ORIGIN ?? /localhost/ }));
 
@@ -31,7 +32,8 @@ app.use(getUserFromToken);
 app.get("/", (req, res) => res.send("Hello, World!"));
 
 app.use("/users", usersRouter);
-app.use("/trainers", trainersRouter)
+app.use("/trainers", trainersRouter);
+app.use("/programs", programsRouter);
 
 
 app.use(handlePostgresErrors);
