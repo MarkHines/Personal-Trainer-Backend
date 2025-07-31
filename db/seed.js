@@ -15,25 +15,25 @@ async function seed() {
   //TRAINERS
 
   const gbst = await createTrainer(`Mr. Plate Banger`, 
-    `http://localhost:3000/images/trainer_image.jpg`,
+    `https://personal-training-app.s3.us-east-2.amazonaws.com/images/trainer_image.jpg`,
     `Over Train, Under Complain! Plates and MORE PLATES!!`,
     faker.lorem.sentences(3)
   );
 
   const qui = await createTrainer(`BIG Qui`,
-    `http://localhost:3000/images/qui.jpg`,
+    `https://personal-training-app.s3.us-east-2.amazonaws.com/images/qui.jpg`,
     `Scientific Focus, but the science says TRAIN HARD!!`,
     faker.lorem.sentences(3)
   );
   
   const fitFilm = await createTrainer(`The FIT Film Maker`,
-    `http://localhost:3000/images/fit_film.JPG`,
+    `https://personal-training-app.s3.us-east-2.amazonaws.com/images/fit_film.JPG`,
     `Sports & Fitness Instruction: Faith, Fitness, Family`,
     faker.lorem.sentences(3)
   );
 
   const theOx = await createTrainer(`BIG MACK`,
-    `http://localhost:3000/images/the_ox.JPG`,
+    `https://personal-training-app.s3.us-east-2.amazonaws.com/images/the_ox.JPG`,
     `Powerlifter at heart, athlete by design — strength with purpose`,
     faker.lorem.sentences(3)
   );
